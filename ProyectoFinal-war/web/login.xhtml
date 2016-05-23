@@ -9,18 +9,18 @@
      <h:body>
         <h1></h1>
         <h:form>
-            <c:if test="#{logginBeans.message}" >
+            <c:if test="#{logginBean.message}" >
               <h2>  accceso denegado </h2> 
             </c:if>
       
-        User: <h:inputText value="#{logginBeans.user}" /> <br/>
-        Pass: <h:inputText value="#{logginBeans.pass}"/> <br/>
+        User: <h:inputText value="#{logginBean.user}" /> <br/>
+        Pass: <h:inputText value="#{logginBean.pass}"/> <br/>
        
-         <h:commandButton value="Enviar" action="#{logginBeans.doAction}" /> 
+         <h:commandButton value="Enviar" action="#{logginBean.doAction}" /> 
          
         </h:form>
-        <a href="#{logginBeans.doRegistrar}" > Registrar</a> <br/>
-        <a href="#{logginBeans.doRecordar}" > Recuperar contraseña</a> <br/>
+        <a href="" > Registrar</a> <br/>
+        <a href="" > Recuperar contraseña</a> <br/>
         
     </h:body>
 </html>

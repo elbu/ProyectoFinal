@@ -17,9 +17,9 @@ import javax.faces.bean.SessionScoped;
 @SessionScoped
 public class LogginBean {
     
-     private boolean message; 
-     private String user;
-     private String pass; 
+     protected boolean message; 
+     protected String user;
+     protected String pass; 
      
     /**
      * Creates a new instance of NewJSFManagedBean
@@ -36,10 +36,12 @@ public class LogginBean {
     
     public String doAction(){
         
+        /// fail 
         this.setUser("");
         this.setPass("");
         this.setMessage((boolean) Boolean.TRUE);
-        return "";
+        
+        return "login.xhtml";
     }
     
     public String doRegistrar(){
