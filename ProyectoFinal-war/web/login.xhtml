@@ -13,10 +13,10 @@
               <h2>  accceso denegado </h2> 
             </c:if>
       
-        User: <h:inputText value="#{logginBean.user}" /> <br/>
-        Pass: <h:inputText value="#{logginBean.pass}"/> <br/>
+            User: <h:inputText value="#{usuarioBean.usuariologeado.idUsuario}" /> <br/>
+            Pass: <h:inputSecret value="#{usuarioBean.usuariologeado.password}"/> <br/>
        
-         <h:commandButton value="Enviar" action="#{logginBean.doAction}" /> 
+            <h:commandButton value="Enviar" action="#{usuarioBean.logeausuario()}" /> 
          
         </h:form>
         <a href="" > Registrar</a> <br/>
